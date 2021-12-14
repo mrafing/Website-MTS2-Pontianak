@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: outfit;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+  min-height: 1000px;
+}
+
+.top {
+  background: url('halaman_depan.jpg');
+  width: 1080px;
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.container .top header {
+  background-color: #15ff009c;
+  width: 1040px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 6px;
+  border-radius: 20px;
+}
+
+.container .top header .logo {
+  float: left;
+  margin-left: 16px;
+}
+
+.container .top header .logo img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 20px;
+}
+
+.container .top header .logo p {
+  width: 250px;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  float: right;
+}
+
+.container .top header nav {
+  float: right;
+}
+
+.container .top header nav ul {
+  list-style: none;
+}
+
+.container .top header nav ul li {
+  float: left;
+  width: 100px;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.container .top header nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.container .top header nav ul li a:hover {
+  color: gold;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
