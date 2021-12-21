@@ -11,9 +11,9 @@
 }
 
 .top {
-  background: url('halaman_depan.jpg');
+  background: url(img/slider/slider1.jpg);
   width: 1080px;
-  height: 800px;
+  height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
