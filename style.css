@@ -9,11 +9,8 @@ body {
 }
 
 .container {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 1080px;
+  margin: 0 auto;
 }
 
 /* slider start */
@@ -83,12 +80,15 @@ body {
 
 /* header start */
 header {
+  position: absolute;
   background-color: #15ff009c;
   width: 1040px;
   margin: 0 auto;
   margin-top: 30px;
   padding: 6px;
   border-radius: 20px;
+  top: -10px;
+  margin-left: 10px;
 }
 
 header .logo {
