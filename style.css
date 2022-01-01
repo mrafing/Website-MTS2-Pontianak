@@ -11,6 +11,7 @@ body {
 .container {
   width: 1080px;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 /* slider start */
@@ -109,6 +110,7 @@ header .logo p {
   font-size: 20px;
   color: white;
   float: right;
+  cursor: default;
 }
 
 header nav {
@@ -136,6 +138,128 @@ header nav ul li a:hover {
   color: gold;
 }
 /* header end */
+
+/* main Beranda */
+.visimisi {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 50px;
+  margin: 20px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.visimisi .misi {
+  width: 45%;
+}
+
+.visimisi .visi {
+  width: 45%;
+}
+.visimisi .misi ol li {
+  text-align: left;
+}
+
+.cnt-fasilitas {
+  width: 99%;
+  margin: 0 auto;
+  background-color: rgba(221, 221, 221, 0.363);
+  border-radius: 10px;
+}
+
+.cnt-fasilitas .top {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.cnt-fasilitas .img-fasilitas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.cnt-fasilitas .cnt-img {
+  padding: 10px 0;
+}
+
+.cnt-fasilitas .img-fasilitas .cnt-img img {
+  display: block;
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+aside {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0;
+  text-align: center;
+}
+
+aside .content {
+  margin-top: 50px;
+  padding: 50px;
+}
+
+aside .content a {
+  text-decoration: none;
+  color: #000;
+}
+
+aside .content a img {
+  width: 200px;
+}
+
+aside .content a p {
+  margin-top: 20px;
+  font-size: 26px;
+}
+
+aside .content:hover {
+  background-color: rgba(221, 221, 221, 0.363);
+  border-radius: 20px;
+  transition: 1s;
+}
+/* end main beranda */
+
+/* footer Beranda */
+footer {
+  background-color: rgb(54, 54, 54);
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+footer .data-sekolah > * {
+  margin: 10px 0;
+}
+
+footer .data-sekolah p {
+  font-size: 14px;
+  border-top: 1px solid #fff;
+}
+
+footer .sosmed {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .sosmed a {
+  text-decoration: none;
+}
+
+footer .sosmed img {
+  width: 30px;
+  height: 30px;
+}
+/* footer Beranda end*/
 
 .clearfix:before,
 .clearfix:after {
