@@ -267,7 +267,7 @@ aside .content:hover {
 /* Profil start */
 .profil {
   padding-top: 200px;
-  min-height: 1000px;
+  height: 1000px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.52) 5.98%, rgba(202, 202, 202) 49.42%, rgba(54, 54, 54, 0.52) 100%);
 }
 
@@ -307,6 +307,41 @@ footer {
 }
 
 /* Profil End */
+
+/* Prestasi Start */
+.cnt-prestasi {
+  text-align: center;
+  background: url(img/Prestasi/piala3.jpg);
+  background-size: 1080px;
+  padding-top: 200px;
+  height: 800px;
+}
+
+.cnt-prestasi h2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 30px 0;
+  display: inline-block;
+  padding: 10px 60px;
+  border-radius: 8px;
+}
+
+.cnt-prestasi table {
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cnt-prestasi table th,
+td {
+  padding: 10px 15px;
+}
+
+.cnt-prestasi th,
+td {
+  border: 1px solid rgba(0, 0, 0, 0.575);
+}
+/* Prestasi End */
 
 .clearfix:before,
 .clearfix:after {
