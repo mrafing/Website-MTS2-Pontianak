@@ -7,20 +7,22 @@
 }
 
 body {
-  background-color: lime;
+  background-color: #15ff00;
 }
 
 .container {
   width: 1080px;
   margin: 0 auto;
   background-color: #fff;
+  min-height: 800px;
+  box-shadow: 0 0 35px 1px rgb(0 0 0 / 10%);
 }
 
 /* Slider Start */
 .slider {
   width: 1080px;
   height: 500px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .slides {
@@ -64,7 +66,7 @@ body {
 
 .manual-btn:hover {
   background: lime;
-  transition: 1s;
+  transition: 0.2s;
 }
 
 #radio1:checked ~ .first {
@@ -84,14 +86,14 @@ body {
 /* header start */
 header {
   position: absolute;
-  background-color: #15ff009c;
-  width: 1040px;
+  background-color: rgb(43, 42, 42);
+  width: 1000px;
   margin: 0 auto;
   margin-top: 30px;
-  padding: 6px;
-  border-radius: 20px;
-  top: -10px;
-  margin-left: 10px;
+  padding: 10px 0;
+  border-radius: 6px;
+  top: -20px;
+  margin-left: 35px;
 }
 
 header .logo {
@@ -107,12 +109,13 @@ header .logo img {
 }
 
 header .logo p {
-  width: 250px;
+  width: 200px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   float: right;
   cursor: default;
+  margin-top: 5px;
 }
 
 header nav {
@@ -146,53 +149,74 @@ header nav ul li a:hover {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  padding: 50px;
+  padding: 150px 50px 150px 50px;
   margin: 100px 0;
+  background: url(img/logo/bg.png);
+  background-position: center;
+  background-size: contain;
 }
 
 .visimisi .misi {
   width: 45%;
-  opacity: inherit;
 }
 
 .visimisi .visi {
   width: 45%;
-  opacity: inherit;
+}
+
+.visimisi .visi h4 {
+  margin: 20px;
+  font-size: 20px;
+}
+.visimisi .misi h4 {
+  margin: 20px;
+  font-size: 20px;
+}
+.visimisi .visi p {
+  font-weight: 600;
+}
+.visimisi .misi ol {
+  font-weight: 600;
 }
 .visimisi .misi ol li {
   text-align: left;
 }
 
 .cnt-fasilitas {
-  width: 99%;
+  width: 100%;
   margin: 0 auto;
-  background-color: rgba(221, 221, 221, 0.363);
-  border-radius: 10px;
+  background-color: #ffffff;
+  background-image: url('img/logo/sun-tornado.svg');
+  background-size: cover;
 }
 
-.cnt-fasilitas .top {
-  padding: 10px 0;
+.cnt-fasilitas .top,
+h2 {
+  padding: 5px 0;
   text-align: center;
-  background-color: #ddd;
-  border-radius: 10px;
 }
 
 .cnt-fasilitas .img-fasilitas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px 10px;
+  justify-content: center;
 }
 
 .cnt-fasilitas .cnt-img {
-  padding: 10px 0;
+  padding: 10px 20px;
 }
 
 .cnt-fasilitas .img-fasilitas .cnt-img img {
   display: block;
-  width: 250px;
-  height: 200px;
+  width: 300px;
+  height: 250px;
+  margin-bottom: 20px;
   border-radius: 10px;
+  border: 4px solid rgb(37, 37, 37);
+}
+.cnt-fasilitas .img-fasilitas .cnt-img img:hover {
+  transform: scale(120%);
+  transition: 0.5s;
 }
 
 aside {
@@ -235,7 +259,8 @@ aside .content:hover {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  padding-bottom: 10px;
+  padding-top: 50px;
+  padding-bottom: 20px;
   text-align: left;
 }
 
@@ -249,9 +274,9 @@ aside .content:hover {
 }
 
 .ft-beranda .sosmed {
-  width: 120px;
+  width: 160px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .ft-beranda .sosmed a {
@@ -259,8 +284,12 @@ aside .content:hover {
 }
 
 .ft-beranda .sosmed img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+}
+.ft-beranda .sosmed img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 /* footer Beranda end*/
 
@@ -342,6 +371,86 @@ td {
   border: 1px solid rgba(0, 0, 0, 0.575);
 }
 /* Prestasi End */
+
+/* Galeri Start */
+.cnt-galeri {
+  width: 1000px;
+  min-height: 500px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 150px;
+  display: grid;
+  grid-template-areas:
+    'satu satu dua dua'
+    'satu satu tiga empat'
+    'lima enam tujuh tujuh'
+    'delapan delapan delapan sembilan'
+    'delapan delapan delapan sepuluh';
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1px;
+}
+
+.cnt-galeri .img {
+}
+
+.img1 {
+  grid-area: satu;
+  height: 500px;
+  width: 500px;
+}
+
+.img2 {
+  grid-area: dua;
+  height: 250px;
+  width: 500px;
+}
+
+.img3 {
+  grid-area: tiga;
+  height: 250px;
+  height: 250px;
+}
+.img4 {
+  grid-area: lima;
+  height: 250px;
+  width: 250px;
+}
+.img5 {
+  grid-area: empat;
+  height: 250px;
+  width: 250px;
+}
+.img6 {
+  grid-area: sepuluh;
+  height: 250px;
+  width: 250px;
+}
+.img7 {
+  grid-area: tujuh;
+  height: 250px;
+  width: 500px;
+}
+.img8 {
+  grid-area: delapan;
+  height: 500px;
+  width: 750px;
+}
+.img9 {
+  grid-area: sembilan;
+  height: 250px;
+  width: 250px;
+}
+.img10 {
+  grid-area: enam;
+  height: 250px;
+  width: 250px;
+}
+.cnt-galeri .img:hover {
+  transform: scale(102%);
+  transition: 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Galery End */
 
 .clearfix:before,
 .clearfix:after {
