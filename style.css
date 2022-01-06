@@ -481,6 +481,29 @@ td {
 }
 /* Data Guru Dan Staff End */
 
+/* Extrakurikuler Start */
+.cnt-extra {
+  padding: 150px 50px;
+}
+
+.cnt-extra .cnt-extra-img {
+  display: flex;
+  gap: 0 30px;
+  padding: 20px 0;
+}
+.cnt-extra .cnt-extra-img img {
+  width: 250px;
+  height: 250px;
+}
+.cnt-extra .cnt-extra-img .cnt-extra-img-text {
+  width: 400px;
+}
+.cnt-extra .cnt-extra-img .cnt-extra-img-text p {
+  margin-top: 10px;
+}
+
+/* Extrakurikuler End */
+
 .clearfix:before,
 .clearfix:after {
   content: '';
