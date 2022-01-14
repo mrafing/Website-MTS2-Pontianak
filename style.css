@@ -81,6 +81,37 @@ body {
 #radio4:checked ~ .first {
   margin-left: -60%;
 }
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 1080px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div {
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: lime;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: lime;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: lime;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: lime;
+}
 /* Slider End */
 
 /* header start */
@@ -211,12 +242,13 @@ h2 {
   height: 250px;
   margin-bottom: 20px;
   border-radius: 10px;
-  border: 4px solid rgb(37, 37, 37);
+  border: 1px solid rgb(37, 37, 37);
 }
 
 .cnt-fasilitas .img-fasilitas .cnt-img-fasilitas img:hover {
-  transform: scale(120%);
+  transform: scale(110%);
   transition: 0.5s;
+  box-shadow: 0 8px 20px rgb(92, 92, 92);
 }
 
 aside {
