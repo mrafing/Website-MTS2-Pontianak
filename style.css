@@ -7,115 +7,65 @@
 }
 
 body {
-  background-color: limegreen;
 }
-
-.container {
-  width: 1080px;
-  margin: 0 auto;
-  background-color: #fff;
-  min-height: 800px;
-  box-shadow: 0 0 35px 1px rgb(0 0 0 / 30%);
-}
-
-/* Slider Start */
-.slider {
-  width: 1080px;
-  height: 500px;
-  overflow-x: hidden;
-}
-
-.slides {
-  width: 500%;
-  height: 500px;
-  display: flex;
-}
-
-.slides input {
-  display: none;
-}
-
-.slide {
-  width: 20%;
-  transition: 2s;
-}
-
-.slides img {
-  width: 1080px;
-  height: 500px;
-}
-
-.navigation-manual {
-  position: absolute;
-  width: 1080px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-}
-
-.manual-btn {
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.514);
-}
-
-.manual-btn:not(:last-child) {
-  margin-right: 20px;
-}
-
-.manual-btn:hover {
-  background: lime;
-  transition: 0.2s;
-}
-
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-#radio2:checked ~ .first {
-  margin-left: -20%;
-}
-#radio3:checked ~ .first {
-  margin-left: -40%;
-}
-#radio4:checked ~ .first {
-  margin-left: -60%;
-}
-
-.navigation-auto {
-  position: absolute;
-  display: flex;
-  width: 1080px;
-  justify-content: center;
-  margin-top: 460px;
-}
-
-.navigation-auto div {
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.navigation-auto div:not(:last-child) {
-  margin-right: 20px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-  background: lime;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-  background: lime;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-  background: lime;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4 {
-  background: lime;
-}
-/* Slider End */
 
 /* header start */
 header {
+  padding: 10px 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 255, 0, 0.3);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 30px;
+}
+
+header .logo img {
+  width: 50px;
+  height: 50px;
+}
+header .logo p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(37, 37, 37);
+  cursor: pointer;
+}
+
+header nav {
+  display: block;
+  padding-right: 60px;
+}
+header nav ul {
+  margin: 0;
+  display: flex;
+  gap: 0 80px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(19, 19, 19);
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  color: gold;
+}
+
+#carouselExampleCaptions {
+  position: relative;
+}
+
+/* header {
   position: absolute;
   background-color: rgb(43, 42, 42);
   width: 1000px;
@@ -172,45 +122,47 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: gold;
-}
+} */
 /* header end */
 
 /* main Beranda */
+.main,
+.beranda {
+  min-height: 1000px;
+}
+
 .visimisi {
-  display: flex;
-  justify-content: space-around;
+  padding: 150px 0;
+}
+
+.visimisi .visimisi-content {
+  width: 50%;
+  margin: 0px auto;
+  padding: 20px;
   text-align: center;
-  padding: 150px 50px 150px 50px;
-  margin: 100px 0;
-  background: url(img/logo/bg.png);
-  background-position: center;
-  background-size: contain;
+  background-color: rgb(0, 230, 0);
+  border-radius: 20px;
+  color: #fff;
 }
 
-.visimisi .misi {
-  width: 45%;
-}
-
-.visimisi .visi {
-  width: 45%;
-}
-
-.visimisi .visi h4 {
-  margin: 20px;
-  font-size: 20px;
-}
-.visimisi .misi h4 {
-  margin: 20px;
-  font-size: 20px;
-}
-.visimisi .visi p {
+.visimisi .visimisi-content h4 {
+  font-size: 30px;
   font-weight: 600;
 }
-.visimisi .misi ol {
-  font-weight: 600;
+
+.visimisi .visimisi-content p {
+  margin-top: 30px;
+  font-size: 20px;
 }
-.visimisi .misi ol li {
+
+.visimisi .visimisi-content ol {
+  margin-left: 30px;
   text-align: left;
+}
+
+.visimisi .visimisi-content ol {
+  margin-top: 30px;
+  font-size: 20px;
 }
 
 .cnt-fasilitas {
