@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
 * {
   margin: 0;
   padding: 0;
   font-family: 'Outfit', sans-serif;
-}
-
-body {
 }
 
 /* header start */
@@ -18,7 +15,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 255, 0, 0.3);
+  background: rgba(4, 4, 4, 0.73);
 }
 
 header .logo {
@@ -36,7 +33,7 @@ header .logo p {
   margin: 0;
   font-size: 20px;
   font-weight: 600;
-  color: rgb(37, 37, 37);
+  color: #fff;
   cursor: pointer;
 }
 
@@ -53,77 +50,17 @@ header nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(19, 19, 19);
+  color: #fff;
   transition: 0.2s;
 }
 
 nav ul li a:hover {
-  color: gold;
+  color: rgba(0, 230, 0, 1);
 }
 
 #carouselExampleCaptions {
   position: relative;
 }
-
-/* header {
-  position: absolute;
-  background-color: rgb(43, 42, 42);
-  width: 1000px;
-  margin: 0 auto;
-  margin-top: 30px;
-  padding: 10px 0;
-  border-radius: 6px;
-  top: -20px;
-  margin-left: 35px;
-}
-
-header .logo {
-  float: left;
-  margin-left: 16px;
-}
-
-header .logo img {
-  width: 50px;
-  height: 50px;
-  float: left;
-  margin-right: 20px;
-}
-
-header .logo p {
-  width: 200px;
-  font-weight: 700;
-  font-size: 16px;
-  color: white;
-  float: right;
-  cursor: default;
-  margin-top: 5px;
-}
-
-header nav {
-  float: right;
-}
-
-header nav ul {
-  list-style: none;
-}
-
-header nav ul li {
-  float: left;
-  width: 100px;
-  margin-top: 14px;
-  text-align: center;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: white;
-  transition: 0.3s ease;
-}
-
-header nav ul li a:hover {
-  color: gold;
-} */
-/* header end */
 
 /* main Beranda */
 .main,
@@ -131,95 +68,129 @@ header nav ul li a:hover {
   min-height: 1000px;
 }
 
+/* visi misi */
 .visimisi {
-  padding: 150px 0;
+  display: flex;
+  width: 100%;
+  background-color: #272727;
+  padding-top: 50px;
 }
 
-.visimisi .visimisi-content {
+.visimisi .visimisi-kanan {
   width: 50%;
-  margin: 0px auto;
-  padding: 20px;
+  padding: 150px 50px 56px 50px;
   text-align: center;
-  background-color: rgb(0, 230, 0);
-  border-radius: 20px;
+  background: #272727;
   color: #fff;
 }
 
-.visimisi .visimisi-content h4 {
-  font-size: 30px;
-  font-weight: 600;
+.visimisi .visimisi-kanan h4 {
+  font-size: 40px;
+  font-weight: 200;
 }
 
-.visimisi .visimisi-content p {
+.visimisi .visimisi-kanan p {
   margin-top: 30px;
   font-size: 20px;
+  font-weight: 100;
+  text-align: left;
 }
 
-.visimisi .visimisi-content ol {
+.visimisi .visimisi-kanan ol {
   margin-left: 30px;
   text-align: left;
 }
 
-.visimisi .visimisi-content ol {
-  margin-top: 30px;
+.visimisi .visimisi-kanan ol {
+  margin-top: 20px;
   font-size: 20px;
+  font-weight: 100;
 }
 
-.cnt-fasilitas {
-  width: 100%;
-  margin: 0 auto;
-  background-color: #ffffff;
-  background-image: url('img/logo/sun-tornado.svg');
-  background-size: cover;
+.visimisi .visimisi-kiri {
+  padding: 56px 0;
+  background: url(img/Background/scattered-forcefields.svg);
+  width: 50%;
 }
 
-.cnt-fasilitas .top,
-h2 {
-  padding: 5px 0;
-  text-align: center;
+/* visi misi end */
+
+/* Fasilitas */
+.fasilitas {
+  display: flex;
+  padding-top: 50px;
+  background-color: #272727;
+}
+.fasilitas-kiri {
+  width: 62%;
+  background-color: #272727;
+  padding: 10px 0;
 }
 
-.cnt-fasilitas .img-fasilitas {
+.fasilitas-kiri .fasilitas-heading h2 {
+  padding: 32px 0;
+  padding-left: 52px;
+  color: #fff;
+  background-color: #454545;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+.fasilitas-kiri .fasilitas-cnt-img {
+  padding-left: 5px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
-.cnt-fasilitas .cnt-img-fasilitas {
-  padding: 10px 20px;
+  gap: 10px 10px;
 }
 
-.cnt-fasilitas .img-fasilitas .cnt-img-fasilitas img {
-  display: block;
-  width: 300px;
-  height: 250px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  border: 1px solid rgb(37, 37, 37);
+.fasilitas-kanan {
+  margin-top: 12px;
+  width: 38%;
+  padding-top: 78px;
+  background-color: #272727;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='531' height='442.5' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.02'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-.cnt-fasilitas .img-fasilitas .cnt-img-fasilitas img:hover {
-  transform: scale(110%);
-  transition: 0.5s;
-  box-shadow: 0 8px 20px rgb(92, 92, 92);
+.fasilitas-kanan ul li {
+  margin: 50px 0;
+  margin-left: 30%;
 }
 
+.fasilitas-kanan ul li a {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.fasilitas-kanan ul li a:hover {
+  color: rgba(0, 230, 0, 1);
+  transition: 0.3s;
+  text-decoration: underline;
+}
+/* Fasilitas  End*/
+
+/* Aside */
 aside {
   display: flex;
-  justify-content: space-around;
-  padding: 100px 0;
+  justify-content: center;
+  gap: 100px;
+  padding: 200px 0;
+  background-color: #272727;
   text-align: center;
 }
-
 aside .content {
   margin-top: 50px;
   padding: 50px;
+  background-color: rgba(221, 221, 221, 0.055);
+  border-radius: 20px;
 }
-
 aside .content a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
-
 aside .content a img {
   width: 200px;
 }
@@ -232,27 +203,25 @@ aside .content a p {
 aside .content:hover {
   background-color: rgba(221, 221, 221, 0.363);
   border-radius: 20px;
-  transition: 1s;
+  transition: 0.5s;
 }
-/* end main beranda */
+/* Aside End */
 
-/* footer Beranda */
+/* Footer main Page */
 .ft-beranda {
   background-color: rgb(54, 54, 54);
   color: #fff;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding: 50px 100px 20px 50px;
   text-align: left;
 }
-
 .ft-beranda .data-sekolah > * {
   margin: 10px 0;
 }
-
 .ft-beranda .data-sekolah p {
+  font-weight: 200;
   font-size: 14px;
   border-top: 1px solid #fff;
 }
@@ -261,113 +230,108 @@ aside .content:hover {
   width: 160px;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
-
 .ft-beranda .sosmed a {
   text-decoration: none;
 }
-
 .ft-beranda .sosmed img {
   width: 40px;
   height: 40px;
 }
+
 .ft-beranda .sosmed img:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
-/* footer Beranda end*/
+/* Footer main Page End*/
 
-/* Profil start */
+/* Profil Page */
 .profil {
-  padding-top: 200px;
-  height: 1000px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.52) 5.98%, rgba(202, 202, 202) 49.42%, rgba(54, 54, 54, 0.52) 100%);
 }
 
-.profil h2 {
+.profil .profil-cnt {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 150px;
   text-align: center;
 }
 
-.profil p {
-  width: 60%;
-  margin: 0 auto;
+.profil .profil-cnt h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.profil .profil-cnt p {
   margin-top: 20px;
   letter-spacing: 1px;
   text-align: center;
+  font-size: 20px;
+  font-weight: 200;
 }
-
-.profil ul {
-  width: 60%;
-  margin: 0 auto;
+.profil .profil-cnt ul {
   margin-top: 20px;
   letter-spacing: 1px;
   border-bottom: 1px solid black;
   padding-bottom: 30px;
+  font-size: 20px;
+  font-weight: 200;
 }
 
-.profil img {
-  display: block;
-  width: 60%;
-  margin: 0 auto;
-  padding: 20px;
+.profil .profil-cnt img {
+  width: 100%;
 }
+/* Profil Page End */
 
-footer {
-  background-color: rgb(54, 54, 54);
-  padding: 20px 0;
-  color: #ddd;
-  text-align: center;
-}
-
-/* Profil End */
-
-/* Prestasi Start */
+/* Prestai Page */
 .cnt-prestasi {
-  text-align: center;
+  padding-top: 150px;
   background: url(img/Prestasi/piala3.jpg);
-  background-size: 1080px;
-  padding-top: 200px;
-  height: 800px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+}
+
+.cnt-prestasi .cnt-prestasi-table {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .cnt-prestasi h2 {
-  background-color: rgba(255, 255, 255, 0.8);
-  margin: 30px 0;
-  display: inline-block;
   padding: 10px 60px;
   border-radius: 8px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .cnt-prestasi table {
-  margin: 0 auto;
+  margin-top: 30px;
   padding: 20px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.8);
 }
-
 .cnt-prestasi table th,
 td {
   padding: 10px 15px;
 }
-
 .cnt-prestasi th,
 td {
   border: 1px solid rgba(0, 0, 0, 0.575);
 }
-/* Prestasi End */
+/* Prestai Page End*/
 
-/* Galeri Start */
+/* Galeri page */
 .cnt-galeri {
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='0.6' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(31.9) translate(-968.65 -726.49)'%3E%3Cuse fill='%23fcfcfc' href='%23s' y='2'/%3E%3Cuse fill='%23fcfcfc' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='2'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(31.9) translate(-968.65 -726.49)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(31.9) translate(-968.65 -726.49)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(31.9) translate(-968.65 -726.49)'%3E%3Cg fill='%23f2f2f2'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(31.9) translate(-968.65 -726.49)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23efefef'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(31.9) translate(-968.65 -726.49)'%3E%3Cg fill='%235AFF0D'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(31.9) translate(-968.65 -726.49)'%3E%3Cg fill='%235AFF0D'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(31.9) translate(-968.65 -726.49)'%3E%3Cg fill='%235AFF0D'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
   background-size: contain;
 }
-
 .cnt-img-galeri {
   width: 1000px;
-  min-height: 500px;
   margin: 0 auto;
-  padding-top: 200px;
+  padding-top: 180px;
   padding-bottom: 150px;
   display: grid;
   grid-template-areas:
@@ -379,19 +343,16 @@ td {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1px;
 }
-
 .img1 {
   grid-area: satu;
   height: 500px;
   width: 500px;
 }
-
 .img2 {
   grid-area: dua;
   height: 250px;
   width: 500px;
 }
-
 .img3 {
   grid-area: tiga;
   height: 250px;
@@ -437,15 +398,14 @@ td {
   transition: 0.5s;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-/* Galery End */
+/* Galeri Page End */
 
-/* Data Guru Dan Staff Start */
+/* Guru & Staff Page */
 .gurustaff {
   min-height: 1000px;
   background: url(img/logo/sun-tornado.svg);
   background-size: cover;
 }
-
 .cnt-gurustaff {
   padding-top: 150px;
   display: flex;
@@ -455,7 +415,6 @@ td {
   margin: 0 auto;
   gap: 50px 10px;
 }
-
 .cnt-gurustaff .cnt-gurustaff-img img {
   width: 200px;
   height: 250px;
@@ -463,11 +422,17 @@ td {
 .cnt-gurustaff .cnt-gurustaff-img p {
   margin-top: 2px;
 }
-/* Data Guru Dan Staff End */
 
-/* Extrakurikuler Start */
-.cnt-extra {
+.cnt-gurustaff .cnt-gurust .cnt-gurustaff .cnt-gurust .cnt-extra {
   padding: 150px 50px;
+}
+/* Guru & Staff Page End */
+
+/* Extrakurikuler Page */
+.cnt-extra {
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px;
 }
 
 .cnt-extra .cnt-extra-img {
@@ -485,18 +450,11 @@ td {
 .cnt-extra .cnt-extra-img .cnt-extra-img-text p {
   margin-top: 10px;
 }
+/* Extrakurikuler Page End*/
 
-/* Extrakurikuler End */
-
-.clearfix:before,
-.clearfix:after {
-  content: '';
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-.clearfix {
-  clear: both;
-  *zoom: 1;
+footer {
+  background-color: rgb(54, 54, 54);
+  padding: 20px 0;
+  color: #ddd;
+  text-align: center;
 }
