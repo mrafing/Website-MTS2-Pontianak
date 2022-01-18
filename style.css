@@ -32,7 +32,7 @@ header .logo img {
 header .logo p {
   margin: 0;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
   cursor: pointer;
 }
@@ -52,6 +52,7 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
   transition: 0.2s;
+  font-weight: 200;
 }
 
 nav ul li a:hover {
@@ -500,6 +501,19 @@ footer {
 }
 
 @media screen and (max-width: 1500px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header .logo {
+    padding-left: 10px;
+  }
+
+  header .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
   .fasilitas-kiri .fasilitas-cnt-img .lapbasket,
   .taman {
     width: 59.9%;
@@ -516,6 +530,29 @@ footer {
   .kantin {
     width: 49%;
     height: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header .logo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  header .logo p {
+    font-size: 14px;
+  }
+
+  header nav {
+    padding-right: 40px;
+  }
+
+  header nav ul {
+    gap: 40px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
   }
 }
 /* Responsive Breakpoint End */
