@@ -54,7 +54,6 @@ header .logo p {
 }
 
 header nav {
-  display: block;
   padding-right: 60px;
 }
 header nav ul {
@@ -76,7 +75,6 @@ nav ul li a:hover {
 }
 
 #carouselExampleCaptions {
-  position: relative;
 }
 
 /* main Beranda */
@@ -234,12 +232,25 @@ aside .content:hover {
   text-align: left;
 }
 .ft-beranda .data-sekolah > * {
-  margin: 10px 0;
+  margin: 0;
+  padding: 0;
 }
+
+.ft-beranda .data-sekolah h3 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.ft-beranda .data-sekolah h4 {
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
 .ft-beranda .data-sekolah p {
   font-weight: 200;
   font-size: 14px;
-  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
 }
 
 .ft-beranda .sosmed {
@@ -311,13 +322,10 @@ aside .content:hover {
 }
 
 .cnt-prestasi .cnt-prestasi-table {
-  width: 50%;
-  margin: 0 auto;
 }
 
 .cnt-prestasi h2 {
   padding: 10px 60px;
-  border-radius: 8px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -326,8 +334,16 @@ aside .content:hover {
   margin-top: 30px;
   padding: 20px;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
 }
+
+.cnt-prestasi .cnt-prestasi-table table tbody {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+}
+
 .cnt-prestasi table th,
 td {
   padding: 10px 15px;
@@ -570,6 +586,10 @@ footer {
     font-size: 12px;
   }
 
+  .fasilitas .fasilitas-kanan ul li a {
+    font-size: 24px;
+  }
+
   aside {
     padding: 200px 50px;
   }
@@ -580,6 +600,30 @@ footer {
 
   aside .content a img {
     width: 70%;
+  }
+
+  .ft-beranda .data-sekolah {
+  }
+
+  .ft-beranda .data-sekolah p {
+    font-size: 1vw;
+  }
+
+  .ft-beranda .data-sekolah h3,
+  .ft-beranda .data-sekolah h4 {
+    font-size: 2vw;
+  }
+
+  .map iframe {
+    width: 300px;
+    height: 200px;
+  }
+
+  .ft-beranda .sosmed a img {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
   }
 }
 /* Responsive Breakpoint End */
