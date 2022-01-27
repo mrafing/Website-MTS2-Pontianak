@@ -79,6 +79,11 @@ nav ul li a:hover {
   color: rgba(0, 230, 0, 1);
 }
 
+main,
+.beranda {
+  background-color: #272727;
+}
+
 /* visi misi */
 .visimisi {
   display: flex;
@@ -118,7 +123,7 @@ nav ul li a:hover {
 
 .visimisi .visimisi-kanan {
   padding: 56px 0;
-  background: url(img/Background/scattered-forcefields.svg);
+  background: url(../img/Background/scattered-forcefields.svg);
   width: 50%;
 }
 
@@ -308,7 +313,7 @@ aside .content:hover {
 /* Prestai Page */
 .cnt-prestasi {
   padding-top: 150px;
-  background: url(img/Prestasi/piala3.jpg);
+  background: url(../img/Prestasi/piala3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -464,7 +469,7 @@ td {
   margin: 20px 150px;
   padding: 20px 10px;
   background-color: rgba(0, 230, 0, 1);
-  background: url(img/Background/spectrum-gradient.svg);
+  background: url(../img/Background/spectrum-gradient.svg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
@@ -628,7 +633,7 @@ footer {
 
 .cnt-input {
   background-color: #272727;
-  background: url(img/Background/endless-constellation.svg);
+  background: url(../img/Background/endless-constellation.svg);
 }
 
 .cnt-input h2 {
@@ -640,7 +645,5 @@ footer {
 
 .cnt-input .col-5 {
   color: #fff;
-  padding-left: 50px;
-  padding-bottom: 100px;
 }
 /* input End */
