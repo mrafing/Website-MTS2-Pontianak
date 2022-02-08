@@ -459,7 +459,7 @@ td {
 /* Extrakurikuler Page */
 .cnt-extra {
   padding: 100px 50px;
-  background-color: #272727;
+  background: radial-gradient(50% 50% at 50% 50%, #919191 3.12%, rgba(0, 0, 0, 0) 99.99%, rgba(39, 39, 39, 0) 100%);
 }
 
 .cnt-extra .cnt-extra-img {
